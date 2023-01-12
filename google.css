@@ -1,0 +1,141 @@
+a{
+    text-decoration: none;
+    margin: 6px;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+}
+body{
+    margin: 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.header{
+    grid-area: 1 / 1 / 2 / 4;;
+    display:flex;
+    justify-content: space-between;
+    
+}
+header.nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+    
+}
+.head-img{
+    box-sizing: 0 0 10px 0 rgb(204, 202, 202);
+    border-radius: 20px;
+    cursor: pointer;
+}
+.cent{
+    grid-area: 2 / 2 / 3 / 3;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input:hover{
+    box-shadow: 0 0 20px 0 gainsboro;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    min-height: 45px;
+    min-width: 600px;
+    border-radius: 50px;
+    border: 1px solid black;
+    position: relative;
+}
+.input .buscador{
+    flex-grow: 1;
+    border: none;
+    outline:none;
+}
+.buscador{
+    display: flex;
+    align-items: center;
+    position: relative;  
+    background-image: url(buscaicon.png);  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    
+}
+.lupa{
+    
+    position: absolute;
+    left: 15px;
+    width: 30px;
+    height: 30px;
+    color: gray;
+    
+}
+.logo{
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+img:hover{
+    cursor: pointer;
+}
+.botones{
+    padding-top: 53px;
+}
+.botones >button{
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    padding: 0 20px;
+    margin: 0 4px;
+    background-color: #f8f9fa;
+}
+.botones > button:hover{
+    cursor: pointer;
+    border: 1px solid gainsboro;
+    box-shadow: 0 0 2px gainsboro;
+}
+<!--footer{
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: #f2f2f2;
+    position:fixed;
+    bottom:0;
+    width:100vw;
+    
+    
+}
+.foot{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 10px;
+   
+    
+}
+.izq{
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.dere{
+    grid-area: 3 / 3 / 4 / 4;
+    display: flex;
+    justify-content: space-between;
+}
+.body{background-color: #ba2121;}
+
+@media (max-width=550){
+    .botones{}
+}
